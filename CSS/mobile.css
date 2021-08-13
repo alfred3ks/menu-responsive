@@ -1,0 +1,112 @@
+/*  Cuerpo de la web */
+body {
+    background-color: coral;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+/*  Cabecera */
+.header {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 320px;
+    height: 60px;
+    background-color: #294674;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__title {
+    margin-left: 30px;
+    font-size: 2.5rem;
+    font-family: monospace;
+}
+
+.header__title a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Menu hamburguesa */
+.header__button {
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header__button-one,
+.header__button-two,
+.header__button-three {
+    width: 100%;
+    height: 2px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+/* Lista de menu */
+.header__nav {
+    display: none;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 320px;
+    position: absolute;
+    top: 60px;
+    background-color: #294674;
+    font-size: 1.2rem;
+    font-family: monospace;
+    transition: 0.3s linear;
+}
+
+.header__nav ul {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.3rem;
+}
+
+.header__nav li {
+    width: 100%;
+    text-align: center;
+    color: black;
+    padding: 20px 0;
+    list-style: none;
+    cursor: pointer;
+}
+
+.header__nav li a {
+    color: wheat;
+    margin: 10px 40px;
+    text-decoration: none;
+}
+
+/* Transformación del menu hamburguesa */
+.change .header__button-one {
+    transform: translateY(8.5px) rotateZ(-45deg);
+}
+
+.change .header__button-two {
+    opacity: 0;
+}
+
+.change .header__button-three {
+    transform: translateY(-7.5px) rotateZ(45deg);
+}
+
+.change__menu {
+    display: block;
+}
+
+
